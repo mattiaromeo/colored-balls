@@ -16,8 +16,7 @@ public class Ball {
         } else {
             if (ball.getColor().equals(color)) {
                 return ball;
-            }
-            else{
+            } else {
                 ball = new Ball(color);
             }
         }
