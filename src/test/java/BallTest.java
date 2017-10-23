@@ -28,4 +28,10 @@ public class BallTest {
         Assertions.assertThat(red.getColor()).isEqualTo("RED");
     }
 
+    @Test
+    public void differentBalls() throws Exception {
+        Ball red = Ball.getInstance("RED");
+        Ball blue = Ball.getInstance("Blue");
+        Assertions.assertThat(blue).isSameAs(red);
+    }
 }
