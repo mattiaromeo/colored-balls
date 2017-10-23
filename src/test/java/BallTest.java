@@ -1,6 +1,8 @@
 
+
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
+
 
 
 public class BallTest {
@@ -25,4 +27,5 @@ public class BallTest {
         Ball red = Ball.getInstance("RED");
         Assertions.assertThat(red.getColor()).isEqualTo("RED");
     }
+
 }
