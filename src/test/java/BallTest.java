@@ -15,8 +15,8 @@ public class BallTest {
     public void anotherBallWithParameterBlue_shouldReturnSameBlueBall() throws Exception {
 
         Ball blue = Ball.getInstance("Blue");
-        Ball red = Ball.getInstance("RED");
-        Assertions.assertThat(red.getColor()).isEqualTo("RED");
+        Ball secondBlueBall=Ball.getInstance("Blue");
+        Assertions.assertThat(blue).isSameAs(secondBlueBall);
 
     }
 
